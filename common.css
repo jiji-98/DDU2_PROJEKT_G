@@ -1,0 +1,9 @@
+.links, .home_link{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    padding: 5px;
+}
+
