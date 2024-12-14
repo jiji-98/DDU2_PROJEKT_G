@@ -1,0 +1,28 @@
+14/12-24 16:08
+Har skapat alla relevanta html-filer, css och javascript för 
+projektet enligt intruktionerna i brief pdf filen. 
+Har också lagt till länkarna i respektive html fil och lagt till lite 
+i common.css för länkarna. Har också skapat en div container för 
+alla divarna som det ska stå nummer i för varje html-fil förutom
+index.html.
+
+Vad som måste skapas:
+- addUpTo:
+    - 
+
+- clear:
+    -
+
+- findSame:
+    - 
+
+- remove:
+    - 
+
+- repititions:
+    -
+
+- sum:
+    - 
+
+UPPDATERA DENNA FIL EFTER SKAPANDET AV PSEUDOKOD!!
