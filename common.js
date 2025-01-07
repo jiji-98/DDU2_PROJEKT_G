@@ -27,3 +27,17 @@ document.body.prepend(homeLinkContainerDom);
 const randomNumberDivDom = document.querySelector(".numberCreationDiv");
 
 const numberContainerDom = document.querySelector(".numberContainer");
+
+const pDom = document.createElement("p");
+pDom.textContent = "How many numbers in the grid?";
+pDom.classList.add("padding");
+
+let createInputDom = document.createElement("input");
+createInputDom.setAttribute("type", "text");
+
+
+createInputDom.classList.add("padding");
+
+const buttonDom = document.createElement("button");
+buttonDom.textContent = "Create";
+buttonDom.classList.add("padding");
