@@ -23,3 +23,5 @@ homeLinkDom.textContent = "Home";
 homeLinkDom.classList.add("home_link");
 homeLinkContainerDom.appendChild(homeLinkDom);
 document.body.prepend(homeLinkContainerDom);
+
+const randomNumberDivDom = document.querySelector(".numberCreationDiv");
