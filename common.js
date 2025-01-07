@@ -16,3 +16,10 @@ function numberDivs() { //Ändrad på den 23:e december
     }
 };
 
+let homeLinkContainerDom = document.createElement("div");
+let homeLinkDom = document.createElement("a");
+homeLinkDom.setAttribute("href", "../index.html");
+homeLinkDom.textContent = "Home";
+homeLinkDom.classList.add("home_link");
+homeLinkContainerDom.appendChild(homeLinkDom);
+document.body.prepend(homeLinkContainerDom);
