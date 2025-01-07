@@ -21,7 +21,6 @@ function findAdditionPairForInput() {
                 div2.classList.add("found");
                 return;
             }
-
         };
 
     };
