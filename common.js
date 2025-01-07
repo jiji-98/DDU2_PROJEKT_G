@@ -45,3 +45,5 @@ buttonDom.classList.add("padding");
 randomNumberDivDom.appendChild(pDom);
 randomNumberDivDom.appendChild(createInputDom);
 randomNumberDivDom.appendChild(buttonDom);
+
+buttonDom.addEventListener("click", numberDivs);
