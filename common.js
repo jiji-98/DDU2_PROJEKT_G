@@ -1,11 +1,11 @@
-function randomNumber(min, max) { //genererar ett slumpmässigt nummer
+function randomNumber(min, max) {
     return min + Math.floor((max + 1 - min) * Math.random());
 };
 
-function numberDivs() { //Ändrad på den 23:e december
+function numberDivs() {
     numberContainerDom.innerHTML = "";
-    let inputValue = createInputDom.value; //eftersom värdet uppdateras 
-    let numberOfDivs = Number(inputValue); // Här omvandlar vi strängen av nummer till nummer.
+    let inputValue = createInputDom.value;
+    let numberOfDivs = Number(inputValue);
 
     for (let i = 0; i < numberOfDivs; i++) {
         let numberDivDom = document.createElement("div");
