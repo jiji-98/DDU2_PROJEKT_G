@@ -25,3 +25,5 @@ homeLinkContainerDom.appendChild(homeLinkDom);
 document.body.prepend(homeLinkContainerDom);
 
 const randomNumberDivDom = document.querySelector(".numberCreationDiv");
+
+const numberContainerDom = document.querySelector(".numberContainer");
