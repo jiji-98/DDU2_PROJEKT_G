@@ -41,3 +41,7 @@ createInputDom.classList.add("padding");
 const buttonDom = document.createElement("button");
 buttonDom.textContent = "Create";
 buttonDom.classList.add("padding");
+
+randomNumberDivDom.appendChild(pDom);
+randomNumberDivDom.appendChild(createInputDom);
+randomNumberDivDom.appendChild(buttonDom);
