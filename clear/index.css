@@ -1,0 +1,14 @@
+.target:hover{
+    background-color: orange;
+    color: orange;
+   
+}
+
+.target{
+    background-color: red;
+    color: red;
+}
+
+.box:hover {
+    background-color: lightblue;
+}
