@@ -22,10 +22,10 @@ homeLinkDom.setAttribute("href", "../index.html");
 homeLinkDom.textContent = "Home";
 homeLinkDom.classList.add("home_link");
 homeLinkContainerDom.appendChild(homeLinkDom);
-document.body.prepend(homeLinkContainerDom);
 
 const randomNumberDivDom = document.createElement("div");
 randomNumberDivDom.classList.add("wrapper");
+
 
 const numberContainerDom = document.querySelector(".numberContainer");
 
@@ -46,5 +46,8 @@ buttonDom.classList.add("padding");
 randomNumberDivDom.appendChild(pDom);
 randomNumberDivDom.appendChild(createInputDom);
 randomNumberDivDom.appendChild(buttonDom);
+document.body.prepend(randomNumberDivDom);
+document.body.prepend(homeLinkContainerDom);
+
 
 buttonDom.addEventListener("click", numberDivs);
