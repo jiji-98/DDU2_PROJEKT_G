@@ -24,7 +24,8 @@ homeLinkDom.classList.add("home_link");
 homeLinkContainerDom.appendChild(homeLinkDom);
 document.body.prepend(homeLinkContainerDom);
 
-const randomNumberDivDom = document.querySelector(".numberCreationDiv");
+const randomNumberDivDom = document.createElement("div");
+randomNumberDivDom.classList.add("wrapper");
 
 const numberContainerDom = document.querySelector(".numberContainer");
 
