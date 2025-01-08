@@ -28,3 +28,13 @@ function findCopiesOfDiv() {
 
     });
 };
+
+function resetDivs() {
+    let divArray = document.querySelectorAll(".numberDivsCSS");
+    divArray.forEach(div => {
+        div.classList.remove("found");
+        copiesPDom.textContent = `Click on a number to find copies`;
+    });
+
+}
+
