@@ -11,7 +11,7 @@ function numberDivs() {
         let numberDivDom = document.createElement("div");
         numberDivDom.textContent = randomNumber(0, 99);
         numberDivDom.classList.add("numberDivsCSS");
-        numberDivDom.classList.add("box");
+        numberDivDom.classList.add("div_box");
         numberContainerDom.appendChild(numberDivDom);
     }
 };
