@@ -38,6 +38,9 @@ function findSumOfMarkedDivs() {
 
 }
 
+let sumAllInputDom = document.querySelector("#sum_all");
+let sumMarkedInputDom = document.querySelector("#sum_marked");
+let resetButton = document.querySelector("#reset");
 
 
 buttonDom.addEventListener("click", () => {
