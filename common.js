@@ -20,7 +20,7 @@ let homeLinkContainerDom = document.createElement("div");
 let homeLinkDom = document.createElement("a");
 homeLinkDom.setAttribute("href", "../index.html");
 homeLinkDom.textContent = "Home";
-homeLinkDom.classList.add("home_link");
+homeLinkDom.classList.add("wrapper");
 homeLinkContainerDom.appendChild(homeLinkDom);
 
 const randomNumberDivDom = document.createElement("div");
