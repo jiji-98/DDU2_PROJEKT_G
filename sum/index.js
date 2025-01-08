@@ -17,7 +17,35 @@ function findSumOfAllDivs() {
     sumAllInputDom.value = sumOfAll;
 }
 
+function findSumOfMarkedDivs() {
+    let divArray = document.querySelectorAll(".numberDivsCSS");
+    let sumOfMarked = 0;
+    sumMarkedInputDom.value = " ";
+    divArray.forEach(div => {
+        div.classList.remove("found");
+    });
+
+    divArray.forEach(div => {
+        div.addEventListener("click", () => {
+            div.classList.add("found");
+            let divNumber = Number(div.textContent);
+            sumOfMarked += divNumber;
+
+            sumMarkedInputDom.value = sumOfMarked;
+
+        })
+    });
+
+}
+
+
+
 buttonDom.addEventListener("click", () => {
     findSumOfMarkedDivs();
     findSumOfAllDivs();
 });
+
+resetButton.addEventListener("click", () => {
+    findSumOfMarkedDivs();
+    findSumOfAllDivs();
+})
