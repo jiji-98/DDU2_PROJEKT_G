@@ -30,5 +30,7 @@ function clearInteractivity() {
 };
 
 let clearButton = document.querySelector("#clear_button");
+
 clearButton.addEventListener("click", clearInteractivity);
+
 buttonDom.addEventListener("click", updateInteractivity);
