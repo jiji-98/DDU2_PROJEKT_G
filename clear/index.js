@@ -30,3 +30,4 @@ function clearInteractivity() {
 };
 
 let clearButton = document.querySelector("#clear_button");
+buttonDom.addEventListener("click", updateInteractivity);
