@@ -27,7 +27,8 @@ const randomNumberDivDom = document.createElement("div");
 randomNumberDivDom.classList.add("wrapper");
 
 
-const numberContainerDom = document.querySelector(".numberContainer");
+const numberContainerDom = document.createElement("div");
+numberContainerDom.classList.add("numberContainer");
 
 const pDom = document.createElement("p");
 pDom.textContent = "How many numbers in the grid?";
@@ -43,11 +44,13 @@ const buttonDom = document.createElement("button");
 buttonDom.textContent = "Create";
 buttonDom.classList.add("padding");
 
+
 randomNumberDivDom.appendChild(pDom);
 randomNumberDivDom.appendChild(createInputDom);
 randomNumberDivDom.appendChild(buttonDom);
 document.body.prepend(randomNumberDivDom);
 document.body.prepend(homeLinkContainerDom);
+document.body.append(numberContainerDom);
 
 
 buttonDom.addEventListener("click", numberDivs);
