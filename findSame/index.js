@@ -38,3 +38,10 @@ function resetDivs() {
 
 }
 
+let copiesPDom = document.querySelector("#find_same_p");
+
+let resetButton = document.querySelector("#reset_button");
+
+resetButton.addEventListener("click", resetDivs);
+
+buttonDom.addEventListener("click", findCopiesOfDiv);
