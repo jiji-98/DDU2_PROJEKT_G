@@ -18,4 +18,15 @@ function updateInteractivity() {
 
 };
 
+function clearInteractivity() {
+    let divArray = document.querySelectorAll(".numberDivsCSS");
+    divArray.forEach(div => {
+        if (div.classList.contains("target")) {
+            div.classList.remove("target");
+            div.classList.add("div_box");
+            div.textContent = randomNumber(0, 99);
+        }
+    });
+};
+
 let clearButton = document.querySelector("#clear_button");
