@@ -52,5 +52,4 @@ document.body.prepend(randomNumberDivDom);
 document.body.prepend(homeLinkContainerDom);
 document.body.append(numberContainerDom);
 
-
 buttonDom.addEventListener("click", numberDivs);
