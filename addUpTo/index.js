@@ -1,11 +1,11 @@
 function findAdditionPairForInput() {
 
-    let divArray = document.querySelectorAll(".numberDivs");
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
     let inputValue = addUpTo_inputDom.value;
     let inputValueNumber = Number(inputValue);
-    notFound.textContent = " ";
+    notFound.textContent = " - ";
 
-    divArray.forEach(div => { 
+    divArray.forEach(div => {
         div.classList.remove("found");
     });
 
@@ -24,7 +24,7 @@ function findAdditionPairForInput() {
         };
 
     };
-    return notFound.textContent = "Inga par hittades som summerar till det angivna numret";
+    return notFound.textContent = " - ";
 };
 
 

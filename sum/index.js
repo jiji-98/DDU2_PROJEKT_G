@@ -1,7 +1,8 @@
 function findSumOfAllDivs() {
 
     sumMarkedInputDom.textContent = "   -   ";
-    let divArray = document.querySelectorAll(".numberDivs");
+
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
     let sumOfAll = 0;
 
     divArray.forEach(div => {
@@ -18,9 +19,11 @@ function findSumOfAllDivs() {
 }
 
 function findSumOfMarkedDivs() {
-    let divArray = document.querySelectorAll(".numberDivs");
+
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
+
     let sumOfMarked = 0;
-    sumMarkedInputDom.value = " ";
+    sumMarkedInputDom.value = " - ";
     divArray.forEach(div => {
         div.classList.remove("found");
     });

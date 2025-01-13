@@ -1,6 +1,6 @@
 function findCopiesOfDiv() {
 
-    let divArray = document.querySelectorAll(".numberDivs");
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
 
     divArray.forEach(div => {
         div.addEventListener("click", function () {
@@ -17,7 +17,7 @@ function findCopiesOfDiv() {
                     otherDiv.classList.add("found");
                     numberOfFoundDivs++;
                 } else {
-                    copiesPDom.textContent = `1 copies of ${div.textContent}`;
+                    copiesPDom.textContent = `1 copies of the number ${div.textContent}`;
                 };
             };
             copiesPDom.textContent = `${numberOfFoundDivs} copies of ${div.textContent}`;
@@ -28,7 +28,9 @@ function findCopiesOfDiv() {
 };
 
 function resetDivs() {
-    let divArray = document.querySelectorAll(".numberDivs");
+    
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
+    
     divArray.forEach(div => {
         div.classList.remove("found");
         copiesPDom.textContent = `Click on a number to find copies`;

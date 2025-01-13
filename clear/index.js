@@ -1,6 +1,6 @@
 function updateInteractivity() {
 
-    let divArray = document.querySelectorAll(".numberDivs");
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
 
     divArray.forEach(div => {
         div.classList.add("divis")
@@ -21,7 +21,9 @@ function updateInteractivity() {
 };
 
 function clearInteractivity() {
-    let divArray = document.querySelectorAll(".numberDivs");
+    
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
+    
     divArray.forEach(div => {
         if (div.classList.contains("target")) {
             div.classList.remove("target");

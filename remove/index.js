@@ -1,5 +1,6 @@
 function findRandomNumberInDivs() {
-    let divArray = document.querySelectorAll(".numberDivs");
+    let divArray = Array.from(document.querySelectorAll(".numberDivs"));
+
     let randomNumberForDiv = randomNumber(0, 99);
     randomNumberInputDom.value = `${randomNumberForDiv}`;
     removedNumberInputDom.value = ` - `;
