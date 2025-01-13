@@ -1,5 +1,10 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+@font-face {
+    font-family: "Overpass_Mono";
+    src: url(font/OverpassMono-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Overpass_Mono;
     font-size: 18px;
 }
 
@@ -31,7 +36,6 @@ p {
 
 button {
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     height: 30px;
@@ -47,7 +51,7 @@ button {
     margin-top: 30px;
 }
 
-.numberDivsCSS {
+.numberDivs {
     height: 40px;
     width: 40px;
     border: 1px solid black;
@@ -58,16 +62,40 @@ button {
     border-radius: 5px;
 }
 
+.box {
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+input {
+    text-align: center;
+}
+
+
+
+
 .found {
     background-color: greenyellow;
 }
 
 
-.box_css {
-    padding: 10px 15px;
-    border: 1px solid black;
-    border-radius: 2px;
+
+.target:hover {
+    background-color: orange;
+    color: orange;
+
 }
+
+.target {
+    background-color: red;
+    color: red;
+}
+
+.divis:hover {
+    background-color: lightblue;
+}
+
 
 #sum_div {
     display: flex;
@@ -82,16 +110,14 @@ button {
     gap: 10px;
 }
 
-input {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-}
-
-.found_remove {
+.to_be_removed {
     background-color: orange;
 }
 
-.found_removed {
+.removed {
     background-color: red;
+}
+
+#removed_number_box {
+    width: 30%;
 }
