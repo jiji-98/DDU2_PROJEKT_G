@@ -1,6 +1,6 @@
 function findAdditionPairForInput() {
 
-    let divArray = document.querySelectorAll(".numberDivsCSS");
+    let divArray = document.querySelectorAll(".numberDivs");
     let inputValue = addUpTo_inputDom.value;
     let inputValueNumber = Number(inputValue);
     notFound.textContent = " ";
