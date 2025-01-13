@@ -1,19 +1,19 @@
 function findRandomNumberInDivs() {
-    let divArray = document.querySelectorAll(".numberDivsCSS");
+    let divArray = document.querySelectorAll(".numberDivs");
     let randomNumberForDiv = randomNumber(0, 99);
+    randomNumberInputDom.value = `${randomNumberForDiv}`;
     removedNumberInputDom.value = ` - `;
 
     divArray.forEach(div => {
 
-        if (div.classList.contains("found_removed")) return;
+        if (div.classList.contains("removed")) return;
 
-        if (div.classList.contains("found_remove")) {
-            div.classList.remove("found_remove");
+        if (div.classList.contains("to_be_removed")) {
+            div.classList.remove("to_be_removed");
         }
-        randomNumberInputDom.value = `${randomNumberForDiv}`;
 
         if (randomNumberForDiv === Number(div.textContent)) {
-            div.classList.add("found_remove");
+            div.classList.add("to_be_removed");
 
         }
     });
@@ -22,7 +22,7 @@ function findRandomNumberInDivs() {
 
 
 function removeMarkedDiv() {
-    let divsToRemove = document.querySelectorAll(".found_remove");
+    let divsToRemove = document.querySelectorAll(".to_be_removed");
 
     if (divsToRemove.length === 0) {
         removedNumberInputDom.value = `There is nothing to remove`;
@@ -30,8 +30,8 @@ function removeMarkedDiv() {
     }
 
     divsToRemove.forEach(div => {
-        div.classList.add("found_removed");
-        div.classList.remove("found_remove");
+        div.classList.add("removed");
+        div.classList.remove("to_be_removed");
         div.textContent = "X";
     });
 

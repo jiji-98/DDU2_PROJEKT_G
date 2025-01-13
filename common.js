@@ -10,8 +10,7 @@ function numberDivs() {
     for (let i = 0; i < numberOfDivs; i++) {
         let numberDivDom = document.createElement("div");
         numberDivDom.textContent = randomNumber(0, 99);
-        numberDivDom.classList.add("numberDivsCSS");
-        numberDivDom.classList.add("div_box");
+        numberDivDom.classList.add("numberDivs");
         numberContainerDom.appendChild(numberDivDom);
     }
 };
@@ -36,6 +35,7 @@ pDom.classList.add("padding");
 
 let createInputDom = document.createElement("input");
 createInputDom.setAttribute("type", "text");
+createInputDom.classList.add("box");
 
 
 createInputDom.classList.add("padding");
