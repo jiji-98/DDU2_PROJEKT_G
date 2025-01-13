@@ -1,29 +1,31 @@
 function updateInteractivity() {
 
-    let divArray = document.querySelectorAll(".numberDivsCSS");
+    let divArray = document.querySelectorAll(".numberDivs");
+
+    divArray.forEach(div => {
+        div.classList.add("divis")
+    })
 
     divArray.forEach((div) => {
         div.addEventListener("click", () => {
-            if (div.classList.contains("div_box")) {
+            if (div.classList.contains("divis")) {
                 div.classList.add("target");
-                div.classList.remove("div_box");
+                div.classList.remove("divis");
             } else if (div.classList.contains("target")) {
                 div.classList.remove("target");
-                div.classList.add("div_box");
+                div.classList.add("divis");
                 div.textContent = randomNumber(0, 99);
             }
         });
-
     });
-
 };
 
 function clearInteractivity() {
-    let divArray = document.querySelectorAll(".numberDivsCSS");
+    let divArray = document.querySelectorAll(".numberDivs");
     divArray.forEach(div => {
         if (div.classList.contains("target")) {
             div.classList.remove("target");
-            div.classList.add("div_box");
+            div.classList.add("divis");
             div.textContent = randomNumber(0, 99);
         }
     });
