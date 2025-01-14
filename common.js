@@ -15,47 +15,57 @@ function numberDivs() {
     }
 };
 
-let linkContainerDom = document.createElement("div");
-let homeLinkDom = document.createElement("a");
+const linkContainerDom = document.createElement("div");
+linkContainerDom.classList.add("link_container");
+
+
+const homeLinkDom = document.createElement("a");
 homeLinkDom.setAttribute("href", "../index.html");
 homeLinkDom.textContent = "Home";
 homeLinkDom.classList.add("wrapper");
 linkContainerDom.appendChild(homeLinkDom);
 
-let githubLinkDom = document.createElement("a");
+const githubLinkDom = document.createElement("a");
 githubLinkDom.setAttribute("href", "https://github.com/jiji-98/DDU2_PROJEKT_G");
-githubLinkDom.id = "gitHub";
-githubLinkDom.textContent = "Visit my gitHub profile here :)";
-linkContainerDom.appendChild(githubLinkDom);
+githubLinkDom.classList.add("link");
+githubLinkDom.classList.add("box");
+githubLinkDom.textContent = "GitHub";
+linkContainerDom.append(githubLinkDom);
 
-const randomNumberDivDom = document.createElement("div");
-randomNumberDivDom.classList.add("wrapper");
+const webshareLinkDom = document.createElement("a");
+webshareLinkDom.setAttribute("href", "https://webshare.mah.se/ap6593/DDU2_projekt/index.html");
+webshareLinkDom.classList.add("link");
+webshareLinkDom.classList.add("box");
+webshareLinkDom.textContent = "Webshare";
+linkContainerDom.append(webshareLinkDom);
 
 
-const numberContainerDom = document.createElement("div");
-numberContainerDom.classList.add("numberContainer");
+const createNumberDivDom = document.createElement("div");
+createNumberDivDom.classList.add("wrapper");
 
 const pDom = document.createElement("p");
 pDom.textContent = "How many numbers in the grid?";
 pDom.classList.add("padding");
 
-let createInputDom = document.createElement("input");
+const createInputDom = document.createElement("input");
 createInputDom.setAttribute("type", "text");
 createInputDom.classList.add("box");
-
-
 createInputDom.classList.add("padding");
 
 const buttonDom = document.createElement("button");
 buttonDom.textContent = "Create";
 buttonDom.classList.add("padding");
 
+const numberContainerDom = document.createElement("div");
+numberContainerDom.classList.add("numberContainer");
 
-randomNumberDivDom.appendChild(pDom);
-randomNumberDivDom.appendChild(createInputDom);
-randomNumberDivDom.appendChild(buttonDom);
-document.body.prepend(randomNumberDivDom);
+
+createNumberDivDom.appendChild(pDom);
+createNumberDivDom.appendChild(createInputDom);
+createNumberDivDom.appendChild(buttonDom);
+document.body.prepend(createNumberDivDom);
 document.body.prepend(linkContainerDom);
 document.body.append(numberContainerDom);
+
 
 buttonDom.addEventListener("click", numberDivs);
