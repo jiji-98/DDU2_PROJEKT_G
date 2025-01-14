@@ -15,12 +15,18 @@ function numberDivs() {
     }
 };
 
-let homeLinkContainerDom = document.createElement("div");
+let linkContainerDom = document.createElement("div");
 let homeLinkDom = document.createElement("a");
 homeLinkDom.setAttribute("href", "../index.html");
 homeLinkDom.textContent = "Home";
 homeLinkDom.classList.add("wrapper");
-homeLinkContainerDom.appendChild(homeLinkDom);
+linkContainerDom.appendChild(homeLinkDom);
+
+let githubLinkDom = document.createElement("a");
+githubLinkDom.setAttribute("href", "https://github.com/jiji-98/DDU2_PROJEKT_G");
+githubLinkDom.id = "gitHub";
+githubLinkDom.textContent = "Visit my gitHub profile here :)";
+linkContainerDom.appendChild(githubLinkDom);
 
 const randomNumberDivDom = document.createElement("div");
 randomNumberDivDom.classList.add("wrapper");
@@ -49,7 +55,7 @@ randomNumberDivDom.appendChild(pDom);
 randomNumberDivDom.appendChild(createInputDom);
 randomNumberDivDom.appendChild(buttonDom);
 document.body.prepend(randomNumberDivDom);
-document.body.prepend(homeLinkContainerDom);
+document.body.prepend(linkContainerDom);
 document.body.append(numberContainerDom);
 
 buttonDom.addEventListener("click", numberDivs);
