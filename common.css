@@ -83,50 +83,6 @@ input {
 }
 
 
-
 .found {
     background-color: greenyellow;
-}
-
-
-
-.target:hover {
-    background-color: orange;
-    color: orange;
-
-}
-
-.target {
-    background-color: red;
-    color: red;
-}
-
-.divis:hover {
-    background-color: lightblue;
-}
-
-
-#sum_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.sum_row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.to_be_removed {
-    background-color: orange;
-}
-
-.removed {
-    background-color: red;
-}
-
-#removed_number_box {
-    width: 30%;
 }

@@ -1,0 +1,11 @@
+.to_be_removed {
+    background-color: orange;
+}
+
+.removed {
+    background-color: red;
+}
+
+#removed_number_box {
+    width: 30%;
+}
