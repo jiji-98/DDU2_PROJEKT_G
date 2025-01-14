@@ -18,6 +18,7 @@ function findSumOfAllDivs() {
     sumAllInputDom.value = sumOfAll;
 }
 
+
 function findSumOfMarkedDivs() {
 
     let divArray = Array.from(document.querySelectorAll(".numberDivs"));
@@ -40,6 +41,8 @@ function findSumOfMarkedDivs() {
     });
 
 }
+
+
 
 let sumAllInputDom = document.querySelector("#sum_all");
 let sumMarkedInputDom = document.querySelector("#sum_marked");
